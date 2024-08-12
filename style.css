@@ -1,0 +1,177 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Color de fondo opcional */
+}
+
+/* Línea blanca en la parte superior */
+.linea_superior {
+    height: 2vw; /* Ajusta según sea necesario */
+    background-color: white;
+    width: 100%;
+}
+
+
+
+
+
+/* Contenedor de la caja principal */
+.box_content_main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    
+}
+
+
+
+
+
+/* Contenedor para el título y el contenido a la derecha */
+.main-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Limita el ancho máximo */
+    
+}
+
+
+
+/* Título grande */
+h1 {
+    font-size: 20vw; /* Ajusta el tamaño según sea necesario */
+    margin: 0;
+    font-family: 'Six Caps', sans-serif;
+    flex: 1;
+    text-align: center;
+}
+
+/* Contenedor para el contenido a la derecha */
+.box_content_seccond {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 2vw; /* Espacio entre el título y el contenido */
+    min-width: 30vw; /* Asegura que el contenido tenga un ancho mínimo */
+}
+
+/* Estilo para h2 */
+h2 {
+    font-size: 5vw; /* Ajusta el tamaño según sea necesario */
+    margin-bottom: 2vw;
+}
+
+.fichas{
+    color: #40dfaf;
+}
+
+
+
+
+
+
+/* Botón */
+.button_wsp {
+    text-decoration: none;
+}
+
+button {
+    background-color: #40dfaf;
+    border: none;
+    color: white;
+    padding: 1vw 2vw;
+    font-size: 2vw;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3e504a;
+}
+
+
+
+/* Footer */
+footer {
+    background: #f1f1f1;
+    padding: 2vw;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer li {
+    margin: 0 2vw;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+    font-size: 2.5vw;
+}
+
+footer h2 {
+    display: inline;
+    font-size: 2.5vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive  */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20vw; /* Ajusta el tamaño para pantallas más pequeñas */
+    }
+
+    .box_content_seccond {
+        margin-left: 0;
+        min-width: 0;
+        align-items: center; /* Centra el contenido en pantallas más pequeñas */
+    }
+
+    h2 {
+        font-size: 5vw; /* Ajusta el tamaño para pantallas más pequeñas */
+    }
+
+    button {
+        font-size: 4vw; /* Ajusta el tamaño del botón para pantallas más pequeñas */
+        padding: 1.5vw 3vw;
+    }
+
+    footer a {
+        font-size: 3vw; /* Ajusta el tamaño de los enlaces en el footer para pantallas más pequeñas */
+    }
+
+    footer h2 {
+        font-size: 3vw; /* Ajusta el tamaño de los h2 en el footer para pantallas más pequeñas */
+    }
+}
